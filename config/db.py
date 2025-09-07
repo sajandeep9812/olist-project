@@ -4,7 +4,7 @@ import os
 
 # Read credentials from environment (safer than hardcoding)
 DB_USER = os.getenv('OLIST_DB_USER', 'root')
-DB_PASS = os.getenv('OLIST_DB_PASS', 'nandha7890')
+DB_PASS = os.getenv('OLIST_DB_PASS')
 DB_HOST = os.getenv('OLIST_DB_HOST', 'localhost')
 DB_PORT = int(os.getenv('OLIST_DB_PORT', 3306))
 DB_NAME = os.getenv('OLIST_DB_NAME', 'olist')
